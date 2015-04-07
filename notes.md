@@ -6,3 +6,4 @@
     + responsiveness
     + style
     + open correct form on-click
+- Get correct prices
