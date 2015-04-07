@@ -3,17 +3,8 @@
 /*
 	Handles pricing table
  */
-var i, template, text;
-
-template = Y.Squarespace.Template;
-
-i = 0;
-
-text = '';
-
 $('#pricingTable').hover(function() {
-  text = text + ++i;
-  $(this).text(text);
-  $(this).css('background-color', color);
-  return console.log('T= ' + JSON.stringify(template, void 0, 2));
-}, function() {});
+  return console.log('Hover in');
+}, function() {
+  return console.log('Hover out');
+});

@@ -1,29 +1,97 @@
 
-<div id="header">
-</div>
-<div id="pricingTable">
-  <div class="price col-sm-3">
-    <div class="top">TOP 1</div>
-    <div class="mid">MID</div>
-    <div class="bot">BOT</div>
+<style>
+  #pricingTable {
+  	width: 100%;
+  	height: auto;
+  	
+  	display: block;
+  	float: none;
+  	color: rgb(255,255,255);
+  }
+  .tier {
+  	width: 100%;
+  	margin: 0;
+  	
+  	display: inline-block;
+  	float: none;
+  	
+  	text-align: center;
+  }
+  .top {
+  	width:100%;
+  	background-color: rgb(245,117,108);
+  }
+  .mid {
+  	width:100%;
+  	background-color: rgb(243,144,137);
+  	//- border-top: 1px solid rgb(255,255,255);
+  }
+  .bot {
+  	width:100%;
+  	background-color: rgb(238,233,233);
+  	color: rgb(0,0,0);
+  	//- border-top: 1px solid rgb(0,0,0);
+  }
+  
+</style>
+<div id="pricingTable" class="container">
+  <div class="row"></div>
+  <div class="col-sm-4">
+    <div class="tier">
+      <div class="top">$595/Mo</div>
+      <div class="mid">
+        Audience Size<br>
+        25,000 
+      </div>
+      <div class="bot">Blog Post</div>
+    </div>
   </div>
-  <div class="price col-sm-3">
-    <div class="top">TOP 2</div>
-    <div class="mid">MID</div>
-    <div class="bot">BOT</div>
+  <div class="col-sm-4">
+    <div class="tier">
+      <div class="top">$995/Mo</div>
+      <div class="mid">
+        Audience Size<br>
+        50,000
+      </div>
+      <div class="bot">Blog Post</div>
+      <div class="bot">Local News Editorials</div>
+    </div>
   </div>
-  <div class="price col-sm-3">
-    <div class="top">TOP 3</div>
-    <div class="mid">MID</div>
-    <div class="bot">BOT</div>
+  <div class="col-sm-4">
+    <div class="tier">
+      <div class="top">$1995/Mo</div>
+      <div class="mid">
+        Audience Size<br>
+        100,000
+      </div>
+      <div class="bot">Blog Post</div>
+      <div class="bot">Regional News Editorials</div>
+    </div>
   </div>
-  <div class="price col-sm-3">
-    <div class="top">TOP 4</div>
-    <div class="mid">MID</div>
-    <div class="bot">BOT</div>
+  <div class="col-sm-4">
+    <div class="tier">
+      <div class="top">$3495/Mo</div>
+      <div class="mid">
+        Audience Size<br>
+        250,000
+      </div>
+      <div class="bot">Blog Post</div>
+      <div class="bot">Regional News Editorials</div>
+      <div class="bot">Premium Media Content</div>
+      <div class="bot">Analytic Reports</div>
+    </div>
   </div>
-</div>
-<div id="footer">
-  <script type="text/javascript" src="/s/jquery-v1-11-2-min.js"></script>
-  <script type="text/javascript" src="/s/pricingTable.js"></script>
+  <div class="col-sm-4">
+    <div class="tier">
+      <div class="top">$7495/Mo</div>
+      <div class="mid">
+        Audience Size<br>
+        500,000
+      </div>
+      <div class="bot">Blog Post</div>
+      <div class="bot">National News Editorials</div>
+      <div class="bot">Premium Media Content</div>
+      <div class="bot">Analytic Reports</div>
+    </div>
+  </div>
 </div>

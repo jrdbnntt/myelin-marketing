@@ -1,25 +1,97 @@
-#header
-	//- link(link rel="stylesheet" type="text/css" href="/s/bootstrap-min.css")
+//- 
+	BOOTSTRAP NOTES
+	Enabled CSS:
+		- Grid System
+			horizontal margin = 0
+			grid num = 20
+		- Responsive
+	
+	
+//- 
+	#header
+		link(link rel="stylesheet" type="text/css" href="/s/bootstrap-min.css")
+//- 
+	#footer
+		script(type="text/javascript" src="/s/jquery-v1-11-2-min.js")
+		//- script(type="text/javascript" src="/s/bootstrap-min.js")
+		script(type="text/javascript" src="/s/pricingTable.js")
 
-#pricingTable()
-	.price.col-sm-3
-		.top TOP 1
-		.mid MID
-		.bot BOT
-	.price.col-sm-3
-		.top TOP 2
-		.mid MID
-		.bot BOT
-	.price.col-sm-3
-		.top TOP 3
-		.mid MID
-		.bot BOT
-	.price.col-sm-3
-		.top TOP 4
-		.mid MID
-		.bot BOT
+style.
+	#pricingTable {
+		width: 100%;
+		height: auto;
+		
+		display: block;
+		float: none;
+		color: rgb(255,255,255);
+	}
+	.tier {
+		width: 100%;
+		margin: 0;
+		
+		display: inline-block;
+		float: none;
+		
+		text-align: center;
+	}
+	.top {
+		width:100%;
+		background-color: rgb(245,117,108);
+	}
+	.mid {
+		width:100%;
+		background-color: rgb(243,144,137);
+		//- border-top: 1px solid rgb(255,255,255);
+	}
+	.bot {
+		width:100%;
+		background-color: rgb(238,233,233);
+		color: rgb(0,0,0);
+		//- border-top: 1px solid rgb(0,0,0);
+	}
 
-#footer
-	script(type="text/javascript" src="/s/jquery-v1-11-2-min.js")
-	//- script(type="text/javascript" src="/s/bootstrap-min.js")
-	script(type="text/javascript" src="/s/pricingTable.js")
+#pricingTable.container()
+	.row
+	.col-sm-4
+		.tier
+			.top $595/Mo
+			.mid.
+				Audience Size<br>
+				25,000 
+			.bot Blog Post
+	.col-sm-4
+		.tier
+			.top $995/Mo
+			.mid.
+				Audience Size<br>
+				50,000
+			.bot Blog Post
+			.bot Local News Editorials
+	.col-sm-4
+		.tier
+			.top $1995/Mo
+			.mid.
+				Audience Size<br>
+				100,000
+			.bot Blog Post
+			.bot Regional News Editorials
+	.col-sm-4
+		.tier
+			.top $3495/Mo
+			.mid.
+				Audience Size<br>
+				250,000
+			.bot Blog Post
+			.bot Regional News Editorials
+			.bot Premium Media Content
+			.bot Analytic Reports
+	.col-sm-4
+		.tier
+			.top $7495/Mo
+			.mid.
+				Audience Size<br>
+				500,000
+			.bot Blog Post
+			.bot National News Editorials
+			.bot Premium Media Content
+			.bot Analytic Reports
